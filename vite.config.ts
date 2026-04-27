@@ -4,13 +4,13 @@ import { defineConfig } from "vite";
   import path from "path";
 
   export default defineConfig({
-    base: "./",
+    base: "/",
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
         "@": path.resolve(import.meta.dirname, "src"),
       },
-      dedupe: ["react", "react-dom"],
+     
     },
     build: {
       outDir: "dist",
